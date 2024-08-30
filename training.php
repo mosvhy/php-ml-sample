@@ -15,7 +15,7 @@ function createModel()
         $dataset = [];
         $files = scandir($folderPath);
         foreach ($files as $file) {
-            if ($file !== '.' && $file !== '..') {
+            if ($file !== '.' && $file !== '..' && $file !== '.gitignore') {
                 $filePath = $folderPath . '/' . $file;
                 $features = ImageFeatures::extractFeatures($filePath);
                 $dataset[] = [$features, $label];

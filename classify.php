@@ -14,7 +14,7 @@ function classify() {
     $imagePaths = [];
     $files = glob("./sample" . "/*");
     foreach ($files as $file) {
-        if (is_file($file)) {
+        if (is_file($file) && basename($file) !== '.gitignore') {
             $imagePaths[] = 'sample/'.basename($file);
         }
     }
