@@ -1,0 +1,8 @@
+tests
+vendor
+.env
+composer.lock
+sample/*
+result/*
+dataset/non_receipts/*
+dataset/receipts/*
