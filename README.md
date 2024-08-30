@@ -36,14 +36,28 @@ ini_set('memory_limit', '512M');
 
 ## Installation
 
-To get started with the project, you'll need to install the necessary libraries. You can easily do this using Composer:
+To get started with the project, follow these steps:
 
-```bash
-composer install
-```
+1. **Install Dependencies**:
+   Use Composer to install the required libraries:
 
-This command will automatically fetch and install all dependencies required for the project to run smoothly.
+   ```bash
+   composer install
+   ```
 
+2. **Create Required Directories**:
+
+   - **For Unix-like Systems (Linux, macOS)**:
+     ```bash
+     mkdir -p dataset/receipts dataset/non_receipts sample
+     ```
+
+   - **For Windows**:
+     ```bash
+     mkdir dataset\receipts dataset\non_receipts sample
+     ```
+
+   This will ensure that the necessary folders for storing images are created.
 
 ## Usage
 
